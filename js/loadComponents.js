@@ -13,5 +13,9 @@ function loadComponent(url, targetId) {
 window.onload = function () {
   loadComponent('components/header/header.html', 'header');
   loadComponent('components/footer/footer.html', 'footer');
-  // Другие компоненты, если необходимо
+
+  /* Сюда вставляешь путь на компоненту в первую переменную,
+  а во вторую вставляешь название блока, ты его дальше будешь использовать
+  в вызове в index.html id="header"
+  */
 };
