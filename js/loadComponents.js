@@ -5,23 +5,13 @@ function loadComponent(url, targetId) {
     .then((html) => {
       const targetElement = document.getElementById(targetId);
       targetElement.innerHTML = html;
-
-      // Загружаем и применяем CSS для компонента
-      loadComponentCSS(url.replace('.html', '.css'));
     })
     .catch((error) => console.error('Error loading component:', error));
-}
-
-// Функция для загрузки и применения CSS для компонента
-function loadComponentCSS(cssUrl) {
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = cssUrl;
-  document.head.appendChild(link);
 }
 
 // Загружаем и вставляем компоненты
 window.onload = function () {
   loadComponent('components/header/header.html', 'header');
+  loadComponent('components/footer/footer.html', 'footer');
   // Другие компоненты, если необходимо
 };
