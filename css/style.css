@@ -1,0 +1,46 @@
+:root{
+  --blue: #4900e4;
+  --magenta: #ec4f89;
+  --orange: #ff9933;
+  --yellow: #ffd15c;
+
+  --desk-radius: 50px;
+  --little-radius: 20px;
+  --mobile-radius: 12px;
+
+  --desk-card-padding: 32px;
+  --mobile-card-padding: 16px;
+
+  --desk-block-margin: 150px;
+  --tablet-block-margin: 120px;
+  --mobile-block-margin: 80px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  color: #050505;
+  font-family: "Montsserat", sans-serif;
+  font-size: 16px;
+}
+
+
+
+a {
+  cursor: pointer;
+}
+
+
+/* @media (max-width: 1160px) {
+  
+}
+@media (max-width: 680px) {
+  
+}
+@media (max-width: 360px) {
+  
+} */
