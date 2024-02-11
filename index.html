@@ -2,31 +2,287 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>По Пути – Главная</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>По Пути – Главная</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+
 </head>
 
 <body>
-  <header id="header"></header>
-  <footer id="footer"></footer>
-  <!-- Здесь можешь просто div присваивать id и всё что ты написала в 
-      header.html автоматически вставится сюда. Это что-то типо аналога 
-      компонент в react 
-    -->
+    <header>
+        <!-- <div class="container"> -->
+        <div class="logo">
+            <a href="./index.html" title="На главную">
+                <img src="./img/logo.svg" alt="Логотип По Пути">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav__menu">
+                <li class="header-nav__item">
+                    <a href="#">
+                        О приложении
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#">
+                        Функции
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#">
+                        Партнёры
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#">
+                        Отзывы
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#">
+                        Достижения
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- </div> -->
+    </header>
+    <main>
 
-  <!-- Подключаем скрипт для динамической загрузки компонентов -->
-  <script src="js/loadComponents.js"></script>
+        <section class="hero-block">
+            <dotlottie-player src="https://lottie.host/9167395f-b2b2-4a7a-bd13-cb7569c6f43f/VuaAQZqrL0.json"
+                background="transparent" speed="1" autoplay></dotlottie-player>
+            <h1>
+                По пути
+            </h1>
+            <p class="section__text">
+                Открой мир с По Пути: удобное приложение для путешествий!
+            </p>
+        </section>
+
+        <section class="cta container">
+            <div class="blocks-row">
+                <div class="block block_small">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Воспользуйся преимуществами приложения
+                                <span class="block__title_magenta">в числе первых!</span>
+                            </h3>
+                            <p class="block__text">
+                                Регистрируйся на тестовые поездки
+                            </p>
+                        </div>
+                        <a href="">
+                            <div class="block__btn block__btn_magenta">
+                                Зарегистрироваться
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="block block_medium block_magenta">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Мини-версия приложения
+                                <span class="block__title_colored">уже доступна</span>
+                                в телеграме
+                            </h3>
+                            <p class="block__text">
+                                Путешествуй комфортно уже сейчас, в чат-боте собран основной функционал будущего
+                                приложения,
+                                которым
+                                вы можете воспользоваться уже сейчас!
+                            </p>
+                        </div>
+                        <a href="">
+                            <div class="block__btn block__btn_telegram">
+
+                                Попробовать
+
+                            </div>
+                        </a>
+                    </div>
+                    <img class="block_img" src="./img/cta-tg-img.png" alt="Категории в приложении">
+                </div>
+                <div class="block block_small">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Следи за нашими обновлениями
+                                <span class="block__title_magenta">в соцсетях</span>
+                            </h3>
+                            <p class="block__text">
+                                Узнавай больше о новых местах, интересных событиях и поездках вместе с нами
+                            </p>
+                        </div>
+                        <div class="block__socials">
+                            <a href="">
+                                <img src="./img/instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="">
+                                <img src="./img/tik-tok.svg" alt="TikTok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="block_large" src="./img/cta-img.png" alt="Иллюстрация результатов поиска в приложении">
+        </section>
+
+        <section>
+            <h3 class="section__sub-title">
+                По Пути — твой надёжный гид в мире приключений!
+            </h3>
+            <p class="section__text">
+                Создай свой маршрут из актуальной базы мест или выбери из множества тематических маршрутов. Реши
+                все задачи своего путешествия в одном месте
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section__title">
+                Как это работает
+            </h2>
+            <div class="steps">
+                <div class="steps__item">
+                    <img src="./img/step1.svg" alt="Шаг 1">
+                    <p class="steps__text"></p>
+                </div>
+                <div class="steps__item">
+                    <img src="./img/step2.svg" alt="Шаг 2">
+                    <p class="steps__text"></p>
+                </div>
+                <div class="steps__item">
+                    <img src="./img/step3.svg" alt="Шаг 3">
+                    <p class="steps__text"></p>
+                </div>
+                <div class="steps__item">
+                    <img src="./img/step4.svg" alt="Шаг 4">
+                    <p class="steps__text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section__title">
+                Возможности приложения
+            </h2>
+            <div class="block block_big">
+                <h3 class="block__title">
+                    Адаптируй маршрут под свой путь
+                </h3>
+                <p class="block__text">
+                    Задавай ключевые точки своего маршрута и получай все места По Пути, с возможностью сортировки
+                    по категориям
+                </p>
+                <img class="block__img" src="./img/your-way.png" alt="Иллюстрация сортировки по категориям">
+            </div>
+            <div class="block block_big">
+                <h3 class="block__title">
+                    Создай свой маршрут
+                </h3>
+                <p class="block__text">
+                    Актуальная база мест, отсортированная по категориям, в разы упрощает поиск и процесс создания своего
+                    маршрута
+                </p>
+                <img class="block__img" src="./img/make-way.png" alt="Иллюстрация создания маршрута">
+            </div>
+            <div class="block block_big">
+                <h3 class="block__title">
+                    Выбери уже готовый маршрут
+                </h3>
+                <p class="block__text">
+                    Приложение автоматически рекомендует готовые маршруты по ключевым точкам пути
+                </p>
+                <img class="block__img" src="./img/created-way.png" alt="Иллюстрация готовых маршрутов">
+            </div>
+            <div class="block block_small">
+                <h3 class="block__title">
+                    Постоянная актуальность базы мест
+                </h3>
+                <p class="block__text">
+                    Наша база мест актуальна всегда, так как абсолютно каждый может добавить в неё новые места
+                    и получить бонус
+                </p>
+            </div>
+            <div class="block block_small block_colored">
+                <h3 class="block__title">
+                    Знаешь интересное место и хочешь поделиться им с другими?
+                    <span class="block__title_colored">Напиши нам!</span>
+                </h3>
+                <p class="block__text">
+                    Наша база мест актуальна всегда, так как абсолютно каждый может добавить в неё новые места
+                    и получить бонус
+                </p>
+                <div class="block__btn block__btn_with-icon">
+                    Поделиться местом
+                </div>
+            </div>
+            <div class="block block_medium">
+                <h3 class="block__title"></h3>
+                <p class="block__text"></p>
+                <img class="block__img" src="./tasks.png" alt="Предложения в приложении">
+            </div>
+            <div class="block block_large">
+                <h2 class="block__title"></h2>
+                <p class="block__text"></p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section__title">
+                Наши партнёры
+            </h2>
+            <p class="section__text">
+                Чтобы точка отображалась на карте нашего приложения, необходимо оформить подписку. Есть подготовленные
+                турагентствами маршруты
+            </p>
+            <div class="section__btn">
+                Стать партнёром
+            </div>
+            <div class="partners">
+                <div class="partners-item">
+                    <div class="partners-item__top">
+                        <h3 class="partners-item__title"></h3>
+                        <p class="partners-item__sub-title"></p>
+                        <img class="partners-item__img" src="./img/partner-name.png" alt="Логотип партнёра">
+                    </div>
+                    <p class="partners-item__text"></p>
+                    <a href="" class="partners-item__link"></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section__title">
+                Как это работает
+            </h2>
+        </section>
+
+        <section>
+            <h2 class="section__title">
+                Как это работает
+            </h2>
+        </section>
+
+    </main>
+    <footer></footer>
+
+
+
+    <!-- <script src="./js/script.js"></script> -->
 </body>
 
 </html>
