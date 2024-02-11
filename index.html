@@ -15,7 +15,7 @@
         rel="stylesheet">
 
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
 
 </head>
 
@@ -30,12 +30,12 @@
             <nav class="header-nav">
                 <ul class="header-nav__menu">
                     <li class="header-nav__item">
-                        <a href="#">
+                        <a href="#about">
                             О приложении
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#">
+                        <a href="#possibilities">
                             Функции
                         </a>
                     </li>
@@ -139,10 +139,11 @@
             <img class="block_large" src="./img/cta-img.png" alt="Иллюстрация результатов поиска в приложении">
         </section>
 
-        <section class="container about">
+        <section id="about" class="container about">
             <h3 class="section__sub-title">
                 По Пути — твой надёжный гид в мире приключений!
-                <svg width="142" height="55" viewBox="0 0 142 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="line1" width="142" height="55" viewBox="0 0 142 55" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M23.6284 17.8985C19.8546 16.4592 17.9522 20.1123 15.0674 23.3024C10.6553 28.1814 5.16572 33.678 2.81847 40.6024C-4.94126 63.4937 61.9232 46.8495 67.518 45.2873C84.4109 40.5703 101.234 34.5517 117.459 26.8885C124.032 23.7843 134.633 20.8411 139.093 13.3963C143.109 6.69226 134.14 4.3612 130.421 3.58574C107.621 -1.16963 85.4379 6.19203 63.4242 13.5531"
                         stroke="#FFD15C" stroke-width="3" stroke-linecap="round" />
@@ -155,7 +156,7 @@
             </p>
         </section>
 
-        <section id="how-it-works" class="container">
+        <section class="container section">
             <h2 class="section__title">
                 Как это работает
             </h2>
@@ -187,72 +188,134 @@
             </div>
         </section>
 
-        <section>
+        <section id="possibilities" class="container section">
             <h2 class="section__title">
                 Возможности приложения
             </h2>
-            <div class="block block_big">
-                <h3 class="block__title">
-                    Адаптируй маршрут под свой путь
-                </h3>
-                <p class="block__text">
-                    Задавай ключевые точки своего маршрута и получай все места По Пути, с возможностью сортировки
-                    по категориям
-                </p>
-                <img class="block__img" src="./img/your-way.png" alt="Иллюстрация сортировки по категориям">
-            </div>
-            <div class="block block_big">
-                <h3 class="block__title">
-                    Создай свой маршрут
-                </h3>
-                <p class="block__text">
-                    Актуальная база мест, отсортированная по категориям, в разы упрощает поиск и процесс создания своего
-                    маршрута
-                </p>
-                <img class="block__img" src="./img/make-way.png" alt="Иллюстрация создания маршрута">
-            </div>
-            <div class="block block_big">
-                <h3 class="block__title">
-                    Выбери уже готовый маршрут
-                </h3>
-                <p class="block__text">
-                    Приложение автоматически рекомендует готовые маршруты по ключевым точкам пути
-                </p>
-                <img class="block__img" src="./img/created-way.png" alt="Иллюстрация готовых маршрутов">
-            </div>
-            <div class="block block_small">
-                <h3 class="block__title">
-                    Постоянная актуальность базы мест
-                </h3>
-                <p class="block__text">
-                    Наша база мест актуальна всегда, так как абсолютно каждый может добавить в неё новые места
-                    и получить бонус
-                </p>
-            </div>
-            <div class="block block_small block_colored">
-                <h3 class="block__title">
-                    Знаешь интересное место и хочешь поделиться им с другими?
-                    <span class="block__title_colored">Напиши нам!</span>
-                </h3>
-                <p class="block__text">
-                    Наша база мест актуальна всегда, так как абсолютно каждый может добавить в неё новые места
-                    и получить бонус
-                </p>
-                <div class="block__btn block__btn_with-icon">
-                    Поделиться местом
+            <div class="blocks-row">
+                <div class="block block_big">
+                    <img class="" src="./img/your-way.png" alt="Иллюстрация сортировки по категориям">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Адаптируй маршрут под свой путь
+                                <svg id="line2" width="132" height="11" viewBox="0 0 132 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.06946 8.85802C3.65968 8.65983 5.09808 7.93611 6.58564 7.35966C11.1477 5.59182 15.6105 4.00049 20.5308 3.90657C23.6016 3.84795 26.251 4.24074 28.929 5.86156C30.7997 6.99374 32.4652 8.52056 34.6904 8.80691C40.6689 9.57625 47.0167 5.74283 52.6754 4.26717C57.307 3.05936 65.2005 0.821748 69.6044 3.82201C72.3211 5.6728 74.3739 6.79871 77.7919 6.15561C83.8088 5.02356 89.4145 2.30823 95.6607 2.41116C100.387 2.48905 102.932 5.09373 106.861 6.99891C113.483 10.2093 123.108 5.84958 129.519 4.08916"
+                                        stroke="#FF9933" stroke-width="3" stroke-linecap="round" />
+                                </svg>
+
+                            </h3>
+                            <p class="block__text">
+                                Задавай ключевые точки своего маршрута и получай все места По Пути, с возможностью
+                                сортировки
+                                по категориям
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block block_big">
+                    <img class="" src="./img/create-way.png" alt="Иллюстрация создания маршрута">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Создай свой маршрут
+                                <svg id="line3" width="28" height="44" viewBox="0 0 28 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 11C2 8.11525 2.34389 4.5922 4 2M12 17C14.5463 14.3942 17.6161 11.2987 21 10M16 36C19.6686 36.4878 23.2438 39.6966 26 42"
+                                        stroke="#FF9933" stroke-width="2.99475" stroke-linecap="round" />
+                                </svg>
+
+
+                            </h3>
+                            <p class="block__text">
+                                Актуальная база мест, отсортированная по категориям, в разы упрощает поиск и процесс
+                                создания своего маршрута
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block block_big">
+                    <img class="" src="./img/our-way.png" alt="Иллюстрация готовых маршрутов">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Выбери уже готовый маршрут
+                                <svg id="line4" width="124" height="19" viewBox="0 0 124 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.36033 10.9208C1.32698 10.2636 4.37993 9.56038 5.53924 9.21945C17.2207 5.78414 30.5021 4.09174 42.3359 2.73831C69.1015 -0.32287 95.925 2.90782 122.445 5.4777M15.6497 16.9348C14.7981 16.3943 17.8734 15.5135 18.8286 15.2334C28.4533 12.4113 38.7144 11.1783 48.465 10.0678C70.5188 7.55603 92.6904 10.3346 114.543 12.4522"
+                                        stroke="#FF9933" stroke-width="2.99475" stroke-linecap="round" />
+                                </svg>
+
+                            </h3>
+                            <p class="block__text">
+                                Приложение автоматически рекомендует готовые маршруты по ключевым точкам пути
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="block block_medium">
-                <h3 class="block__title"></h3>
-                <p class="block__text"></p>
-                <img class="block__img" src="./tasks.png" alt="Предложения в приложении">
+            <div class="blocks-row">
+                <div class="block block_small">
+                    <div class="block__header">
+                        <h3 class="block__title">
+                            Постоянная актуальность базы мест
+
+                        </h3>
+                        <p class="block__text">
+                            Наша база мест актуальна всегда, так как абсолютно каждый может добавить в неё новые места
+                            и получить бонус
+                        </p>
+                    </div>
+                </div>
+                <div class="block block_small block_orange">
+                    <div class="block__info">
+                        <h3 class="block__title">
+                            Знаешь интересное место и хочешь поделиться им с другими?
+                            <span class="block__title_colored">Напиши нам!</span>
+                        </h3>
+                        <a href="">
+                            <div class="block__btn block__btn_with-icon block__btn_orange">
+                                Поделиться местом
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="block block_medium">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Реши все задачи<br>в одном месте
+                                <svg id="line5" width="193" height="7" viewBox="0 0 193 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.54358 3.85584C63.8825 0.528398 126.923 2.38803 190.709 4.99084"
+                                        stroke="#FF9933" stroke-width="3" stroke-linecap="round" />
+                                </svg>
+                            </h3>
+                            <p class="block__text">
+                                Путешествие — это не только положительные эмоции и хорошее время препровождение,
+                                это ещё и ряд задачи проблем, которые нам нужно решить по пути.
+                            </p>
+                            <p class="block__text">
+                                Но мы сделали все, чтобы вам было комфортно. Аренда авто, бронирование отеля, гостиницы,
+                                усадьбы все это теперь можно сделать в одном месте
+                            </p>
+                        </div>
+                    </div>
+                    <img class="block__img_small" src="./img/tasks.png" alt="Предложения в приложении">
+                </div>
             </div>
             <div class="block block_large">
                 <h2 class="block__title"></h2>
                 <p class="block__text"></p>
+                
             </div>
         </section>
-
+        <div id="lottie-animation"></div>
         <section>
             <h2 class="section__title">
                 Наши партнёры

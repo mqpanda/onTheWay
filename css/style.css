@@ -30,7 +30,7 @@ body {
   font-weight: 400;
 }
 
-p{
+p {
   line-height: 130%;
 }
 
@@ -44,13 +44,13 @@ h1 {
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   font-size: 42px;
   font-weight: 600;
   margin-bottom: 48px;
 }
 
-h3{
+h3 {
   font-size: 24px;
   font-weight: 600;
 }
@@ -122,7 +122,7 @@ main {
 .blocks-row {
   display: flex;
   column-gap: 10px;
-  margin-top: -60px;
+  margin-bottom: 32px;
 }
 
 .block {
@@ -130,7 +130,7 @@ main {
   background: var(--grey);
   display: flex;
   overflow: hidden;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 400px;
   position: relative;
   padding: var(--desk-card-padding);
@@ -150,6 +150,7 @@ main {
   font-weight: 600;
   font-size: 1.5em;
   line-height: 110%;
+  position: relative;
 }
 
 .block__text {
@@ -172,19 +173,28 @@ main {
   width: 100%;
   font-weight: 600;
   width: fit-content;
-  border: 2px solid var(--magenta);
+  transition: color .2s ease, background-color .2s ease;
 }
 
 .block_medium {
   width: 596px;
+  flex-direction: column;
 }
 
-.block_medium .block__info {
-  width: 65%;
-}
+
 
 .block_magenta {
   background-color: var(--magenta);
+  color: #fff;
+  flex-direction: row;
+}
+
+.block_magenta .block__info {
+  width: 65%;
+}
+
+.block_orange {
+  background-color: var(--orange);
   color: #fff;
 }
 
@@ -193,14 +203,33 @@ main {
 }
 
 .block__btn_magenta {
+  border: 2px solid var(--magenta);
   background-color: var(--magenta);
   color: #fff;
-  transition: color .2s ease, background-color .2s ease;
+  
 }
 
 .block__btn_magenta:hover {
   background-color: #fff;
   color: var(--magenta);
+}
+
+.block__btn_orange {
+  color: #050505;
+}
+
+.block__btn_with-icon:after {
+  content: url("../img/arrow.svg");
+  margin-left: 4px;
+}
+
+.block__btn_with-icon:hover{
+  background-color: rgba(255, 255, 255, .5);
+  color: #fff;
+}
+
+.block__btn_with-icon:hover:after{
+ content: url("../img/arrow-white.svg");
 }
 
 .block__title_colored {
@@ -233,6 +262,11 @@ main {
   right: -60px;
 }
 
+.block__img_small{
+  margin-top: 20px;
+  width: 300px;
+}
+
 .block__socials {
   display: flex;
   column-gap: 10px;
@@ -256,44 +290,61 @@ main {
   width: 100%;
 }
 
+.block_big {
+  flex-direction: column;
+  row-gap: 20px;
+  width: 390px;
+  height: 520px;
+  /* justify-content: end; */
+}
+
+.block_big img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* .block__img_big{
+  position: absolute;
+} */
+
 /*------------about-------------*/
-.about{
+.about {
   display: flex;
   justify-content: space-between;
   width: 960px;
   align-items: center;
 }
 
-.about p{
+.about p {
   width: 450px;
 }
 
-.section__sub-title{
+.section__sub-title {
   font-size: 24px;
   font-weight: 600;
   width: 350px;
   position: relative;
 }
 
-.steps{
+.steps {
   display: flex;
   column-gap: -4px;
 }
 
-#how-it-works{
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.steps__item{
+.steps__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 -3px;
 }
 
-.steps__text{
+.steps__text {
   width: 170px;
   text-align: center;
   margin-top: 20px;
@@ -301,23 +352,72 @@ main {
 
 /*----------svg--------------*/
 
-.section__sub-title svg{
+#line1 {
   position: absolute;
   top: -35%;
   left: -5%;
   z-index: -1;
 }
 
+#line2 {
+  position: absolute;
+  bottom: -20%;
+  right: 45%;
+}
+
+#line3 {
+  position: absolute;
+  right: 10%;
+  top: -50%;
+}
+
+#line4 {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+
+#line5{
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+}
+
 svg path {
   stroke-dasharray: 1040;
   stroke-dashoffset: 1040;
   fill: transparent;
-  transition: stroke-dashoffset 2s ease;
+  transition: stroke-dashoffset 3s ease;
 }
 
 svg path.animate {
   stroke-dashoffset: 0;
 }
+
+
+
+.section__btn {}
+
+.partners {}
+
+.partners-item {}
+
+.partners-item__top {}
+
+.partners-item__title {}
+
+.partners-item__sub-title {}
+
+.partners-item__img {}
+
+.partners-item__text {}
+
+.partners-item__link {}
+
+
+
+
+
 
 /* @media (max-width: 1160px) {
   
