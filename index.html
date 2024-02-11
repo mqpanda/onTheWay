@@ -30,27 +30,27 @@
             <nav class="header-nav">
                 <ul class="header-nav__menu">
                     <li class="header-nav__item">
-                        <a href="#about">
+                        <a href="#about" onclick="scrollToBlock()">
                             О приложении
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#possibilities">
+                        <a href="#possibilities" onclick="scrollToBlock()">
                             Функции
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#">
+                        <a href="#partners" onclick="scrollToBlock()">
                             Партнёры
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#">
+                        <a href="#reviews" onclick="scrollToBlock()">
                             Отзывы
                         </a>
                     </li>
                     <li class="header-nav__item">
-                        <a href="#">
+                        <a href="#achievements" onclick="scrollToBlock()">
                             Достижения
                         </a>
                     </li>
@@ -85,7 +85,7 @@
                             </p>
                         </div>
                         <a href="">
-                            <div class="block__btn block__btn_magenta">
+                            <div class="btn btn_magenta">
                                 Зарегистрироваться
                             </div>
                         </a>
@@ -107,7 +107,7 @@
                             </p>
                         </div>
                         <a href="">
-                            <div class="block__btn block__btn_telegram">
+                            <div class="btn btn_telegram">
                                 Попробовать
                             </div>
                         </a>
@@ -149,7 +149,6 @@
                         stroke="#FFD15C" stroke-width="3" stroke-linecap="round" />
                 </svg>
             </h3>
-
             <p>
                 Создай свой маршрут из актуальной базы мест или выбери из множества тематических маршрутов. Реши
                 все задачи своего путешествия в одном месте
@@ -205,7 +204,6 @@
                                         d="M2.06946 8.85802C3.65968 8.65983 5.09808 7.93611 6.58564 7.35966C11.1477 5.59182 15.6105 4.00049 20.5308 3.90657C23.6016 3.84795 26.251 4.24074 28.929 5.86156C30.7997 6.99374 32.4652 8.52056 34.6904 8.80691C40.6689 9.57625 47.0167 5.74283 52.6754 4.26717C57.307 3.05936 65.2005 0.821748 69.6044 3.82201C72.3211 5.6728 74.3739 6.79871 77.7919 6.15561C83.8088 5.02356 89.4145 2.30823 95.6607 2.41116C100.387 2.48905 102.932 5.09373 106.861 6.99891C113.483 10.2093 123.108 5.84958 129.519 4.08916"
                                         stroke="#FF9933" stroke-width="3" stroke-linecap="round" />
                                 </svg>
-
                             </h3>
                             <p class="block__text">
                                 Задавай ключевые точки своего маршрута и получай все места По Пути, с возможностью
@@ -227,8 +225,6 @@
                                         d="M2 11C2 8.11525 2.34389 4.5922 4 2M12 17C14.5463 14.3942 17.6161 11.2987 21 10M16 36C19.6686 36.4878 23.2438 39.6966 26 42"
                                         stroke="#FF9933" stroke-width="2.99475" stroke-linecap="round" />
                                 </svg>
-
-
                             </h3>
                             <p class="block__text">
                                 Актуальная база мест, отсортированная по категориям, в разы упрощает поиск и процесс
@@ -249,7 +245,6 @@
                                         d="M2.36033 10.9208C1.32698 10.2636 4.37993 9.56038 5.53924 9.21945C17.2207 5.78414 30.5021 4.09174 42.3359 2.73831C69.1015 -0.32287 95.925 2.90782 122.445 5.4777M15.6497 16.9348C14.7981 16.3943 17.8734 15.5135 18.8286 15.2334C28.4533 12.4113 38.7144 11.1783 48.465 10.0678C70.5188 7.55603 92.6904 10.3346 114.543 12.4522"
                                         stroke="#FF9933" stroke-width="2.99475" stroke-linecap="round" />
                                 </svg>
-
                             </h3>
                             <p class="block__text">
                                 Приложение автоматически рекомендует готовые маршруты по ключевым точкам пути
@@ -263,7 +258,6 @@
                     <div class="block__header">
                         <h3 class="block__title">
                             Постоянная актуальность базы мест
-
                         </h3>
                         <p class="block__text">
                             Наша база мест актуальна всегда, так как абсолютно каждый может добавить в неё новые места
@@ -278,11 +272,10 @@
                             <span class="block__title_colored">Напиши нам!</span>
                         </h3>
                         <a href="">
-                            <div class="block__btn block__btn_with-icon block__btn_orange">
+                            <div class="btn btn_with-icon btn_orange">
                                 Поделиться местом
                             </div>
                         </a>
-
                     </div>
                 </div>
                 <div class="block block_medium">
@@ -310,23 +303,29 @@
                 </div>
             </div>
             <div class="block block_large">
-                <h2 class="block__title"></h2>
-                <p class="block__text"></p>
-                
+                <div class="panel">
+                    <h2 class="">Путешествуй выгодно с По Пути</h2>
+                    <p class="block__text">Сделать твоё путешествие выгодней помогает партнёрская программа «По пути»,
+                        множество скидок и акций от партнёров уже ждут тебя!
+                    </p>
+                </div>
+                <div id="lottie-animation"></div>
             </div>
         </section>
-        <div id="lottie-animation"></div>
-        <section>
+
+        <section id="partners" class="container section">
             <h2 class="section__title">
                 Наши партнёры
             </h2>
-            <p class="section__text">
+            <p>
                 Чтобы точка отображалась на карте нашего приложения, необходимо оформить подписку. Есть подготовленные
                 турагентствами маршруты
             </p>
-            <div class="section__btn">
-                Стать партнёром
-            </div>
+            <a href="">
+                <div class="btn btn_blue">
+                    Стать партнёром
+                </div>
+            </a>
             <div class="partners">
                 <div class="partners-item">
                     <div class="partners-item__top">
@@ -358,6 +357,7 @@
 
 
     <script src="./js/startAnimation.js"></script>
+    <script src="./js/anchorScroll.js"></script>
 </body>
 
 </html>

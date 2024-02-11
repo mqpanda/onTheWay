@@ -10,7 +10,7 @@ const animation = lottie.loadAnimation({
     renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
     loop: false, 
     autoplay: false, 
-    path: 'https://lottie.host/c8bfe3ba-1930-4ac9-afe8-35c0ea07e912/cV6BwEUmOV.json' 
+    path: 'https://lottie.host/594c86a0-d6b4-4eef-bd07-a589424f9fd4/cUeBG5FctB.json' 
   });
 
 function isInViewport(element) {
