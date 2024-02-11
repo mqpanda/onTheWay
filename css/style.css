@@ -4,7 +4,6 @@
   --orange: #ff9933;
   --yellow: #ffd15c;
   --grey: #F9F9FB;
-  /*!!!!*/
 
   --desk-radius: 50px;
   --little-radius: 20px;
@@ -31,14 +30,37 @@ body {
   font-weight: 400;
 }
 
+p{
+  line-height: 130%;
+}
+
 a {
   cursor: pointer;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .container {
   margin: 0 auto;
   width: 1202px;
 }
+
+/*------------header-------------*/
 
 header {
   display: flex;
@@ -47,8 +69,14 @@ header {
   background-color: var(--grey);
   position: fixed;
   width: 100%;
-  padding: 8px auto;
   z-index: 1;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
 }
 
 .header-nav__menu {
@@ -56,11 +84,15 @@ header {
   column-gap: 20px;
 }
 
+/*------------main-------------*/
+
 main {
   display: flex;
   flex-direction: column;
   row-gap: var(--desk-block-margin);
 }
+
+/*------------hero-------------*/
 
 .hero-block {
   margin: 0 auto;
@@ -71,18 +103,13 @@ main {
 }
 
 
-
-h1 {
-  font-size: 64px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .section__text {
   font-size: 20px;
   text-align: center;
   max-width: 250px;
 }
+
+/*------------cta-------------*/
 
 .cta {
   row-gap: 32px;
@@ -90,11 +117,11 @@ h1 {
   flex-direction: column;
 }
 
+/*------------blocks-------------*/
+
 .blocks-row {
   display: flex;
   column-gap: 10px;
-  /* width: 1202px; */
-  /* margin: 0 auto; */
   margin-top: -60px;
 }
 
@@ -125,15 +152,12 @@ h1 {
   line-height: 110%;
 }
 
-
-
 .block__text {
   opacity: 0.8;
   line-height: 130%;
 }
 
 .block__info {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,7 +174,6 @@ h1 {
   width: fit-content;
   border: 2px solid var(--magenta);
 }
-
 
 .block_medium {
   width: 596px;
@@ -173,7 +196,6 @@ h1 {
   background-color: var(--magenta);
   color: #fff;
   transition: color .2s ease, background-color .2s ease;
-  ;
 }
 
 .block__btn_magenta:hover {
@@ -197,8 +219,6 @@ h1 {
 .block__btn_telegram:hover {
   background-color: rgba(255, 255, 255, .5);
   color: #fff;
-
-  /* color: var(--magenta); */
 }
 
 .block__btn_telegram:after {
@@ -234,6 +254,69 @@ h1 {
 
 .block_large {
   width: 100%;
+}
+
+/*------------about-------------*/
+.about{
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  align-items: center;
+}
+
+.about p{
+  width: 450px;
+}
+
+.section__sub-title{
+  font-size: 24px;
+  font-weight: 600;
+  width: 350px;
+  position: relative;
+}
+
+.steps{
+  display: flex;
+  column-gap: -4px;
+}
+
+#how-it-works{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -3px;
+}
+
+.steps__text{
+  width: 170px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*----------svg--------------*/
+
+.section__sub-title svg{
+  position: absolute;
+  top: -35%;
+  left: -5%;
+  z-index: -1;
+}
+
+svg path {
+  stroke-dasharray: 1040;
+  stroke-dashoffset: 1040;
+  fill: transparent;
+  transition: stroke-dashoffset 2s ease;
+}
+
+svg path.animate {
+  stroke-dashoffset: 0;
 }
 
 /* @media (max-width: 1160px) {

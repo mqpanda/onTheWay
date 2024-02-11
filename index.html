@@ -21,42 +21,42 @@
 
 <body>
     <header>
-        <!-- <div class="container"> -->
-        <div class="logo">
-            <a href="./index.html" title="На главную">
-                <img src="./img/logo.svg" alt="Логотип По Пути">
-            </a>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html" title="На главную">
+                    <img src="./img/logo.svg" alt="Логотип По Пути">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__menu">
+                    <li class="header-nav__item">
+                        <a href="#">
+                            О приложении
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#">
+                            Функции
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#">
+                            Партнёры
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#">
+                            Достижения
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <ul class="header-nav__menu">
-                <li class="header-nav__item">
-                    <a href="#">
-                        О приложении
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#">
-                        Функции
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#">
-                        Партнёры
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#">
-                        Отзывы
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#">
-                        Достижения
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- </div> -->
     </header>
     <main>
 
@@ -108,9 +108,7 @@
                         </div>
                         <a href="">
                             <div class="block__btn block__btn_telegram">
-
                                 Попробовать
-
                             </div>
                         </a>
                     </div>
@@ -141,36 +139,50 @@
             <img class="block_large" src="./img/cta-img.png" alt="Иллюстрация результатов поиска в приложении">
         </section>
 
-        <section>
+        <section class="container about">
             <h3 class="section__sub-title">
                 По Пути — твой надёжный гид в мире приключений!
+                <svg width="142" height="55" viewBox="0 0 142 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.6284 17.8985C19.8546 16.4592 17.9522 20.1123 15.0674 23.3024C10.6553 28.1814 5.16572 33.678 2.81847 40.6024C-4.94126 63.4937 61.9232 46.8495 67.518 45.2873C84.4109 40.5703 101.234 34.5517 117.459 26.8885C124.032 23.7843 134.633 20.8411 139.093 13.3963C143.109 6.69226 134.14 4.3612 130.421 3.58574C107.621 -1.16963 85.4379 6.19203 63.4242 13.5531"
+                        stroke="#FFD15C" stroke-width="3" stroke-linecap="round" />
+                </svg>
             </h3>
-            <p class="section__text">
+
+            <p>
                 Создай свой маршрут из актуальной базы мест или выбери из множества тематических маршрутов. Реши
                 все задачи своего путешествия в одном месте
             </p>
         </section>
 
-        <section>
+        <section id="how-it-works" class="container">
             <h2 class="section__title">
                 Как это работает
             </h2>
             <div class="steps">
                 <div class="steps__item">
                     <img src="./img/step1.svg" alt="Шаг 1">
-                    <p class="steps__text"></p>
+                    <p class="steps__text">
+                        Определи ключевые точки маршрута
+                    </p>
                 </div>
                 <div class="steps__item">
                     <img src="./img/step2.svg" alt="Шаг 2">
-                    <p class="steps__text"></p>
+                    <p class="steps__text">
+                        Выбери способ передвижения
+                    </p>
                 </div>
                 <div class="steps__item">
                     <img src="./img/step3.svg" alt="Шаг 3">
-                    <p class="steps__text"></p>
+                    <p class="steps__text">
+                        Укажи, что показывать по пути
+                    </p>
                 </div>
                 <div class="steps__item">
                     <img src="./img/step4.svg" alt="Шаг 4">
-                    <p class="steps__text"></p>
+                    <p class="steps__text">
+                        Наслаждайся маршрутом
+                    </p>
                 </div>
             </div>
         </section>
@@ -282,7 +294,7 @@
 
 
 
-    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/startAnimation.js"></script>
 </body>
 
 </html>
