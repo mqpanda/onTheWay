@@ -460,20 +460,6 @@ svg path.animate {
 
 /* Работа с анимацией карточек и карточки партнеров */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font: 16px / 1.4 sans-serif;
-}
-h1 {
-  font-size: 2em;
-  font-weight: bold;
-}
-h1,
-p {
-  margin-bottom: 20px;
-}
 .wrap {
   max-width: 100%;
   margin: auto;
@@ -535,6 +521,7 @@ p {
   margin: 10px 0;
   transition: all 0.1s ease-in-out;
   padding: 24px;
+  font-family: 'Montserat';
 }
 .item:hover {
   transform: scale(1.05);
