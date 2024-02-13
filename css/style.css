@@ -70,7 +70,7 @@ header {
   background-color: var(--grey);
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 header .container {
@@ -83,6 +83,15 @@ header .container {
 .header-nav__menu {
   display: flex;
   column-gap: 20px;
+}
+
+nav ul li a{
+  transition: .2s ease;
+}
+
+nav ul li a:hover{
+  /* color: var(--magenta); */
+  font-weight: 600;
 }
 
 /*------------main-------------*/
@@ -485,7 +494,7 @@ svg path.animate {
   height: 420px;
   width: 900px;
   position: relative;
-  margin-bottom: 500px;
+  margin-bottom: 100px;
 }
 
 .block_form dotlottie-player{
@@ -502,7 +511,6 @@ svg path.animate {
   height: 370px;
   /* width: 900px; */
   position: relative;
-  margin-bottom: 500px;
 }
 
 .block_benefit dotlottie-player{
@@ -617,13 +625,42 @@ label[for='ckbox'] {
   background-color: #fff;
   border-radius: 20px;
   padding: 12px;
+  transition: .2s ease;
+}
+
+.socials__links a:hover{
+  background-color: rgba(255, 255, 255, .5);
 }
 
 .socials__links a img{
   width: 100%;
 }
 
+/*---------footer-------------*/
 
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.footer-nav__menu{
+  display: flex;
+  column-gap: 20px;
+}
+
+footer .socials__links a{
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  padding: 4px;
+  transition: opacity .2s ease;
+}
+
+footer .socials__links a:hover{
+  opacity: 0.5;
+}
 
 .partners {}
 
