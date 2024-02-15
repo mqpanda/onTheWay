@@ -715,6 +715,48 @@ footer .socials__links a:hover {
   border-radius: var(--mobile-radius);
 }
 
+.author-img {
+  width: 55px;
+}
+
+.block_review{
+  row-gap: 10px;
+  justify-content: start;
+  height: 240px;
+  transition: height .2s ease;
+}
+
+.show-more{
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.block_review .block__text{
+  /* height: 60px; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.block_review .block__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  column-gap: 16px;
+}
+
+.block_review .block__header {
+  row-gap: 4px;
+}
+
+.block__secondary-text{
+  font-size: 14px;
+  color:#979797;
+}
+
 .partners {}
 
 .partners-item {}
