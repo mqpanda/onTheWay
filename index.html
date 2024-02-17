@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>По Пути – Главная</title>
+    <title>По Пути – Приложение для путешествий</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -17,16 +17,27 @@
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <meta name="keywords" content="маршруты, мобильное приложение, путешествия">
+    <meta name="description" content="Путешествуй комфортно уже сейчас, в чат-боте собран основной функционал будущего
+    приложения, которым вы можете воспользоваться абсолютно бестплатно">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <a href="./index.html" title="На главную">
+            <a href="./index.html" class="logo">
+                <picture>
+                    <source srcset="./img/small-logo.svg" media="(max-width: 767px)">
                     <img src="./img/logo.svg" alt="Логотип По Пути">
-                </a>
-            </div>
+                </picture>
+            </a>
             <nav class="header-nav">
                 <ul class="header-nav__menu">
                     <li class="header-nav__item">
@@ -56,6 +67,15 @@
                     </li>
                 </ul>
             </nav>
+            <!-- <div class="burger-btn"> -->
+                <!-- <img src="./img/burger-icon.svg" alt="Открыть меню" /> -->
+                <lottie-player class="burger-btn reverseEffect" src="./img/menuV2.json" speed="1"
+                    style="height: 3em; width: 40px;" alt="Открыть меню"></lottie-player>
+            <!-- </div> -->
+        </div>
+
+        <div class=" burger-menu">
+            sfvarvrewvb
         </div>
     </header>
     <main>
@@ -925,6 +945,8 @@
     <script src="./js/form.js"></script>
     <script src="./js/startAnimation.js"></script>
     <script src="./js/anchorScroll.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/modalWindow.js"></script>
 </body>
 
 </html>

@@ -97,6 +97,10 @@ nav ul li a:hover {
   font-weight: 600;
 }
 
+.burger-btn {
+  display: none;
+}
+
 /*------------main-------------*/
 
 main {
@@ -232,7 +236,11 @@ main {
 } */
 
 .block_narrow:hover .block__title:after {
-  content: url("../img/arrow-white.svg");
+  content: url("../img/arrow-blue.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .2s ease;
 }
 
 .block_narrow img {
@@ -240,12 +248,10 @@ main {
   object-fit: cover;
 }
 
-.block_narrow .block__title:after {
+/* .block_narrow .block__title:after {
   content: url("../img/arrow-blue.svg");
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+
+} */
 
 .block_magenta {
   background-color: var(--magenta);
@@ -916,9 +922,73 @@ footer .socials__links a:hover {
 }
 
 
+/*------burger--------*/
+
+
+
+.burger-menu {
+  color: var(--black);
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+  top: 52px;
+}
+/* .burger-menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.burger-menu__nav-wrapper {
+  flex: 1 1 auto;
+}
+.burger-menu__nav {
+  border-bottom: 1px solid #D4D4D4;
+  padding: 8px 0;
+}
+.burger-menu__nav-item {
+  padding: 8px;
+}
+.burger-menu__nav-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-top: 8px;
+}
+.burger-menu__social-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.burger-menu__bottom {
+  padding-top: 8px;
+  border-top: 1px solid #D4D4D4;
+  color: #B7B7B7;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+.burger-menu .header-btns {
+  padding: 8px 0px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  display: none;
+} */
+
+.menu-active {
+  transform: translateX(0px);
+}
+
 
 
 @media (max-width: 1220px) {
+
+  h1 {
+    font-size: 36px;
+  }
 
   .block {
     padding: var(--mobile-card-padding);
@@ -1032,6 +1102,10 @@ footer .socials__links a:hover {
     object-fit: cover;
   }
 
+  .block_narrow .block__title:after {
+    content: url("../img/arrow-blue.svg");
+  }
+
   #achievements div.block_medium {
     width: 740px;
   }
@@ -1063,13 +1137,156 @@ footer .socials__links a:hover {
     width: 50%;
   }
 
-  #achievements .block_small{
+  #achievements .block_small {
     height: 300px;
   }
 }
 
+.burger-btn {
+  display: none;
+  cursor: pointer;
+}
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  main {
+    gap: var(--mobile-block-margin);
+  }
+
+  header .container {
+    margin: 0px auto;
+}
+
+  .header-nav {
+    display: none;
+  }
+
+  .section__text {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+    padding: 2px 8px;
+  }
+
+  .block {
+    border-radius: var(--mobile-radius);
+    padding: var(--mobile-card-padding);
+  }
+
+
+  .hero-block__animation {
+    height: 1%;
+    /* width: 100vw; */
+  }
+
+  .hero-block__animation dotlottie-player {
+    width: 960px;
+  }
+
+  .block_magenta .block__text {
+    display: none;
+  }
+
+  .block_magenta .block__info {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .block__info {
+    width: 85%;
+  }
+
+  .block_magenta .block__header {
+    width: 400px;
+  }
+
+  .block_magenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    height: 420px;
+  }
+
+  .block_img {
+    position: static;
+    object-fit: cover;
+    object-position: top center;
+    align-self: center;
+    order: -1;
+    width: 270px;
+    height: 300px;
+    top: -8%;
+    left: 25%;
+  }
+
+  .block_small {
+    width: 100%;
+    height: 260px;
+  }
+
+  img.block_large {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--mobile-radius);
+  }
+
+
+  .about {
+    flex-direction: column;
+    padding: 8px;
+    gap: 16px;
+  }
+
+  .about p {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .block_small {
+    height: fit-content;
+
+  }
+
+  .about p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .block__info {
+    width: 100%;
+  }
+
+  .block__header {
+    gap: 8px;
+    width: 100%;
+  }
+
+
+  .block_small .block__info {
+    gap: 16px;
+  }
+}
 
 @media (min-width: 1520px) {
   .hero-block__animation {
