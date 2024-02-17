@@ -936,7 +936,7 @@ footer .socials__links a:hover {
   flex-direction: column;
   transform: translateX(100%);
   transition: 0.3s ease-in-out;
-  top: 52px;
+  top: 48px;
 }
 /* .burger-menu__top {
   display: flex;
@@ -1187,10 +1187,20 @@ footer .socials__links a:hover {
     padding: var(--mobile-card-padding);
   }
 
+  .section__text {
+    /* max-width: 150px; */
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .steps{
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+  }
 
   .hero-block__animation {
-    height: 1%;
-    /* width: 100vw; */
+    height: 200px;
   }
 
   .hero-block__animation dotlottie-player {
@@ -1263,11 +1273,49 @@ footer .socials__links a:hover {
 }
 
 @media (max-width: 430px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .hero-block{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .section__title {
+    font-size: 24px;
+  }
+
+  .section__sub-title {
+    width: 100%;
+  }
+
+  #line1 {
+    top: -30%;
+  }
+  
+  .block__title {
+    font-size: 18px;
+  }
+
+  body{
+    font-size: 14px;
+  }
+
   .block_small {
     height: fit-content;
 
   }
+  .steps__item {
+    margin: 0 -24px;
+  }
+  
+  .steps__text {
 
+    width: 180px;
+    padding: 0 20px;
+  }
   .about p {
     width: 100%;
     text-align: left;
@@ -1282,10 +1330,41 @@ footer .socials__links a:hover {
     width: 100%;
   }
 
+  .block__title {
+    width: 100%;
+  }
+
+  .block_big,
+  .block_small,
+  .block_narrow,
+  .block_review {
+    width: 100%;
+  }
+
+  .block_big img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .block_big:first-child {
+    flex-direction: column;
+  }
+
+  .partners__text {
+    width: 100%;
+  }
 
   .block_small .block__info {
     gap: 16px;
   }
+
+  .footer-nav__menu{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+
+ 
 }
 
 @media (min-width: 1520px) {
