@@ -69,15 +69,87 @@
                     </li>
                 </ul>
             </nav>
-            <!-- <div class="burger-btn"> -->
-            <!-- <img src="./img/burger-icon.svg" alt="Открыть меню" /> -->
             <lottie-player class="burger-btn reverseEffect" src="./img/menuV2.json" speed="1"
                 style="height: 3em; width: 40px;" alt="Открыть меню"></lottie-player>
-            <!-- </div> -->
+
         </div>
 
-        <div class=" burger-menu">
-            sfvarvrewvb
+        <div class="container burger-menu">
+            <nav class="burger-nav">
+                <ul class="burger-nav__menu">
+                    <li class="burger-nav__item">
+                        <a href="#about" onclick="scrollToBlock()">
+                            О приложении
+                        </a>
+                    </li>
+                    <li class="burger-nav__item">
+                        <a href="#possibilities" onclick="scrollToBlock()">
+                            Функции
+                        </a>
+                    </li>
+                    <li class="burger-nav__item">
+                        <a href="#partners" onclick="scrollToBlock()">
+                            Партнёры
+                        </a>
+                    </li>
+                    <li class="burger-nav__item">
+                        <a href="#reviews" onclick="scrollToBlock()">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="burger-nav__item">
+                        <a href="#achievements" onclick="scrollToBlock()">
+                            Достижения
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger-blocks">
+                <div class="block block_small block_telegram">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Мини-версия приложения
+                                <span class="block__title_colored">уже доступна</span>
+                                в телеграме
+                            </h3>
+                        </div>
+                        <a href="">
+                            <div class="btn btn_telegram">
+                                Попробовать
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="block block_small">
+                    <div class="block__info">
+                        <div class="block__header">
+                            <h3 class="block__title">
+                                Воспользуйся преимуществами приложения
+                                <span class="block__title_magenta">в числе первых!</span>
+                            </h3>
+                        </div>
+                        <a href="#form" onclick="scrollToBlock()">
+                            <div class="btn btn_magenta">
+                                Зарегистрироваться
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="socials__links">
+                <a href="#">
+                    <img src="./img/instagram.svg" alt="Instagram">
+                </a>
+                <a href="">
+                    <img src="./img/telegram.svg" alt="Telegtam">
+                </a>
+                <a href="">
+                    <img src="./img/tik-tok.svg" alt="TikTok">
+                </a>
+            </div>
         </div>
     </header>
     <main>
@@ -903,7 +975,7 @@
 
                         <div class="recover">
 
-                            <input type="checkbox" id="ckbox">
+                            <input type="checkbox" id="ckbox" class="form-ckbox">
                             <label for="ckbox">Принимаю
                                 <a href="#">условия обработки персональных данных</a>
                             </label>
