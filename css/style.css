@@ -1003,7 +1003,10 @@ footer .socials__links a:hover {
 }
 
 @media (max-width: 1220px) {
-
+  .hero-block {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
   h1 {
     font-size: 36px;
@@ -1174,10 +1177,7 @@ footer .socials__links a:hover {
     height: 300px;
   }
 
-  .hero-block {
-    width: 100%;
-    overflow-x: hidden;
-  }
+
 }
 
 
