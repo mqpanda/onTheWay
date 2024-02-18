@@ -162,7 +162,7 @@ main {
   display: flex;
   overflow: hidden;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
   height: 400px;
   position: relative;
   padding: var(--desk-card-padding);
@@ -481,34 +481,40 @@ main {
 
 /*----------svg--------------*/
 
+.line-text {
+  position: relative;
+  /* display: flex; */
+  width: fit-content;
+}
+
 #line1 {
   position: absolute;
-  top: -35%;
-  left: -5%;
+  top: -30%;
+  left: -10%;
   z-index: -1;
 }
 
 #line2 {
   position: absolute;
-  bottom: -20%;
-  right: 45%;
+  bottom: -30%;
+  left: 0;
 }
 
 #line3 {
   position: absolute;
-  right: 10%;
-  top: -50%;
+  top: -30%;
+  right: -15%;
 }
 
 #line4 {
   position: absolute;
-  top: 50%;
-  right: 15%;
+  bottom: -60%;
+  left: -5%;
 }
 
 #line5 {
   position: absolute;
-  bottom: -15%;
+  bottom: -30%;
   left: 0;
 }
 
@@ -981,9 +987,13 @@ footer .socials__links a:hover {
   transform: translateX(0px);
 }
 
-
+.burger-btn {
+  display: none;
+  cursor: pointer;
+}
 
 @media (max-width: 1220px) {
+
 
   h1 {
     font-size: 36px;
@@ -1018,13 +1028,14 @@ footer .socials__links a:hover {
     height: fit-content;
   }
 
+  /* 
   #line2 {
     right: 50%;
   }
 
   #line3 {
     right: 5%;
-  }
+  } */
 
   .block_big,
   .block_small,
@@ -1117,6 +1128,7 @@ footer .socials__links a:hover {
 
   #achievements div.block_medium {
     width: 740px;
+    gap: 40px;
   }
 
   .block__title:after {
@@ -1151,12 +1163,18 @@ footer .socials__links a:hover {
   }
 }
 
-.burger-btn {
-  display: none;
-  cursor: pointer;
-}
+
 
 @media (max-width: 767px) {
+
+
+  .block {
+    gap: 40px;
+  }
+
+  .block_review{
+    gap: 8px;
+  }
 
   main {
     gap: var(--mobile-block-margin);
@@ -1295,6 +1313,49 @@ footer .socials__links a:hover {
     flex-wrap: nowrap;
     overflow-x: scroll;
   } */
+
+  .block_telegram .block__info {
+    gap: 20px;
+  }
+
+  .block_telegram .block__header {
+    width: 70%;
+  }
+
+
+
+  footer .socials__links {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .block_form {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .block_telegram .block__info {
+    flex-direction: column;
+  }
+
+  .block_telegram .block__header {
+    width: 100%;
+  }
+
+  .block_form form {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .block_form .block__info {
+    gap: 20px;
+  }
+
+  .block_form h2 {
+    font-size: 24px;
+  }
+
 }
 
 @media (max-width: 630px) {
@@ -1368,10 +1429,10 @@ footer .socials__links a:hover {
     border-radius: var(--mobile-radius);
   }
 
-  .block_large {
+  /* .block_large {
     padding-right: 8px;
     padding-left: 8px;
-  }
+  } */
 
   .block_benefit {
     height: 320px;
@@ -1383,9 +1444,47 @@ footer .socials__links a:hover {
     gap: 20px;
   }
 
+  .footer-nav__menu {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+
 }
 
 @media (max-width: 430px) {
+
+  #line1 path,
+  #line2 path,
+  #line3 path,
+  #line4 path,
+  #line5 path {
+    stroke-width: 2;
+  }
+
+  #line2 {
+    bottom: -40%;
+  }
+
+  #line3 {
+    top: -50%;
+  }
+
+  #line4 {
+    top: 100%;
+  }
+
+  #partners h2{
+    margin-bottom: 40px;
+  }
+
+  .section__title {
+    margin-bottom: 32px;
+  }
+
+  .block_magenta .block__header {
+    width: 100%;
+  }
 
   .block_big img {
     width: 80%;
@@ -1409,9 +1508,9 @@ footer .socials__links a:hover {
     width: 100%;
   }
 
-  #line1 {
+  /* #line1 {
     top: -30%;
-  }
+  } */
 
   .block__title {
     font-size: 18px;
@@ -1446,7 +1545,7 @@ footer .socials__links a:hover {
   }
 
   .block__header {
-    gap: 8px;
+    gap: 16px;
     width: 100%;
   }
 
@@ -1477,7 +1576,7 @@ footer .socials__links a:hover {
     right: -5%;
   }
 
-  .block_narrow .block__title{
+  .block_narrow .block__title {
     width: 90%;
   }
 
@@ -1489,10 +1588,21 @@ footer .socials__links a:hover {
     gap: 16px;
   }
 
-  .footer-nav__menu {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
+  .form {
+    padding: 16px;
+
+  }
+
+  .block_form form {
+    gap: 8px;
+  }
+
+  .form__inputs {
+    row-gap: 8px;
+  }
+
+  .box-input__error-text {
+    margin-top: 2px;
   }
 
   #achievements div.block_medium {
@@ -1500,7 +1610,7 @@ footer .socials__links a:hover {
     flex-direction: row;
   }
 
-  #achievements div.block_medium .block__text{
+  #achievements div.block_medium .block__text {
     display: none;
   }
 
@@ -1510,6 +1620,9 @@ footer .socials__links a:hover {
     object-fit: cover;
   }
 
+  .block_telegram.block_small {
+    height: 200px;
+  }
 }
 
 @media (min-width: 1520px) {

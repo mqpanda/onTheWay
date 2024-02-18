@@ -14,7 +14,7 @@ let benefitAnimCode = '<dotlottie-player src="https://lottie.host/c6345b86-402b-
 
 function isInViewport(element) {
     let boundingBox = element.getBoundingClientRect();
-    return boundingBox.top < window.innerHeight * 0.75 && boundingBox.bottom >= 0;
+    return boundingBox.top < window.innerHeight / 2 && boundingBox.bottom >= 0;
 }
 
 function handleScroll() {
