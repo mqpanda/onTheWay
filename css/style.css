@@ -1094,10 +1094,6 @@ footer .socials__links a:hover {
     visibility: visible;
   }
 
-  .block {
-    gap: 40px;
-  }
-
   .block_review {
     gap: 8px;
   }
@@ -1438,7 +1434,7 @@ footer .socials__links a:hover {
   }
 
   .steps__item {
-    margin: 0 -24px;
+    margin: 0 -3px;
   }
 
   .steps__text {
