@@ -928,6 +928,51 @@ footer .socials__links a:hover {
   margin-bottom: 0;
 }
 
+
+.modal_wrapper {
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: opacity 0.2s;
+  z-index: 100;
+}
+.modal_window {
+  max-width: 75%;
+  background-color: #FFFFFF;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 40px;
+  border-radius: 20px;
+  transform: translateY(-10%);
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  margin: 0 auto;
+}
+
+
+.is-open > .modal_window {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal_close_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 1220px) {
   .hero-block {
     width: 100%;
