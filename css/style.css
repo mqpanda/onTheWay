@@ -204,7 +204,7 @@ main {
   display: block;
   padding: 14px 24px;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   font-weight: 600;
   width: fit-content;
   transition: color .2s ease, background-color .2s ease;
@@ -962,8 +962,12 @@ footer .socials__links a:hover {
   transform: translateX(100%);
   transition: 0.3s ease-in-out;
   top: 52px;
-
   visibility: hidden;
+}
+
+.burger-menu .btn_magenta{
+  height: fit-content;
+  align-self: center;
 }
 
 .burger-menu .container {
