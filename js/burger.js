@@ -1,4 +1,5 @@
-burgerMenu = document.querySelector('.burger-menu');
+let burgerMenu = document.querySelector('.burger-menu'),
+burgerBtn = document.querySelector('.burger-btn');
 burgerBtn.onclick = () => {
     burgerMenu.classList.toggle('menu-active');
 };//кнопка бургер-меню
