@@ -1,20 +1,10 @@
-// ScrollOut({
-//     targets: ".animated-item",
-// });
-
-
-
-let burgerBtn = document.querySelector('.burger-btn'),
-    burgerMenu = document.querySelector('.burger-menu');
+burgerMenu = document.querySelector('.burger-menu');
 burgerBtn.onclick = () => {
     burgerMenu.classList.toggle('menu-active');
-};
-
-//кнопка бургер-меню
+};//кнопка бургер-меню
 let player = document.querySelector(".reverseEffect");
 let clicked = false;
 player.addEventListener("click", () => {
-
     if (clicked) {
         player.setDirection(-1);
         clicked = false;
@@ -23,7 +13,4 @@ player.addEventListener("click", () => {
         clicked = true;
     }
     player.play();
-
-});
-
- 
+}); 

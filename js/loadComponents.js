@@ -7,14 +7,10 @@ function loadComponent(url, targetId) {
       targetElement.innerHTML = html;
     })
     .catch((error) => console.error('Error loading component:', error));
-}
-
-// Загружаем и вставляем компоненты
+}// Загружаем и вставляем компоненты
 window.onload = function () {
   loadComponent('components/header/header.html', 'header');
-  loadComponent('components/footer/footer.html', 'footer');
-
-  /* Сюда вставляешь путь на компоненту в первую переменную,
+  loadComponent('components/footer/footer.html', 'footer');  /* Сюда вставляешь путь на компоненту в первую переменную,
   а во вторую вставляешь название блока, ты его дальше будешь использовать
   в вызове в index.html id="header"
   */
